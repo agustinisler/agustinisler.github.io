@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Agustín Isler</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="images/167659 (720p).mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay">
+        <h1>Agustín Heinz Isler Cisternas</h1>
+    </div>
+    <div class="content">
+        <h2>Ingeniería Civil Industrial en la Universidad de los Andes</h2> 
+        <h2>2021-10</h2>
+        <a href="https://github.com/agustinisler">Usuario de GitHub</a>
+        <p>¡Hola! Mi nombre es Agustín Isler, y tengo 21 años. Me encanta el deporte, especialmente el MTB, el basketball
+            y salir a correr. También soy un fanático de los autos y las bicicletas y disfruto explorando su mecánica y tecnología.
+            Actualmente estoy cursando mi 4to año en Ingeniería Civil Industrial, concentración en Desarrollo de Aplicaciones Web.
+            Estoy deseando terminar de estudiar en el extranjero para vivir nuevas experiencias y forjar un futuro allí.
+            Siempre estoy en busca de aprender algo nuevo y emocionante.</p>
+        <div class="container-table">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python</td>
+                        <td>Advance</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Basic</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Basic</td>
+                    </tr>
+                    <tr>
+                        <td>Git</td>
+                        <td>Basic</td>
+                    </tr>
+                    <tr>
+                        <td>Excel</td>
+                        <td>Advance</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>Advance</td>
+                    </tr>
+                    <tr>
+                        <td>Ruby</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>Advance</td>
+                    </tr>   
+                    <tr>
+                        <td>Spanish</td>
+                        <td>Native</td>
+                    </tr>   
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Actualizar Sección de la Página</h2>
+        
+        <form onsubmit="return agregarTexto()">
+            <p>Ingrese un texto:</p>
+            <input type="text" name="titulo" id="nuevo-titulo" required>
+            <button type="submit" class="button">Actualizar</button>
+        </form>
+    
+        <div id="seccion-actualizable"></div>
+    </div>
+
+    <script>
+        function agregarTexto() {
+            var nuevoTitulo = document.getElementById("nuevo-titulo").value;
+            
+            var nuevoParrafo = document.createElement("p");
+            nuevoParrafo.textContent = nuevoTitulo;
+
+            var seccionActualizable = document.getElementById("seccion-actualizable");
+            seccionActualizable.appendChild(nuevoParrafo);
+
+            document.getElementById("nuevo-titulo").value = "";
+
+            return false;
+}
+
+    </script>
+</body>
+</html>
