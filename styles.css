@@ -25,6 +25,10 @@ body {
     z-index: 1;
 }
 
+.col {
+    background-color: aqua;
+}
+
 .content {
     margin-top: 0%;
     padding: 20px;
@@ -39,10 +43,17 @@ h1 {
 }
 
 h2 {
+    align-items: center;
+    justify-content: center;
     font-family: Monaco, monospace;
     font-size: 2em;
     margin: 2%;
     color: #3d71a5;
+}
+
+#Form{
+    align-items: center;
+    justify-content: center;
 }
 
 p {
@@ -52,6 +63,8 @@ p {
 }
 
 .container-table {
+    align-items: center;
+    justify-content: center;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -60,11 +73,15 @@ p {
 }
 
 .styled-table {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     border-collapse: collapse;
     width: 100%;
 }
 
 .styled-table th, .styled-table td {
+    justify-content: center;
     padding: 8px;
     border-bottom: 1px solid #ddd;
 }
